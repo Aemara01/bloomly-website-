@@ -917,6 +917,47 @@
         </div>
     </section>
 
+    <!-- Clients Section -->
+    <section class="clients-section" style="padding: 8rem 5%; background: #0a0a0a;">
+        <div class="section-header">
+            <h2>Trusted by <span class="underline">Leading Brands</span></h2>
+            <p>We've helped fitness brands of all sizes achieve their growth goals</p>
+        </div>
+        
+        <div class="clients-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; max-width: 1200px; margin: 4rem auto; align-items: center;">
+            <!-- Logo placeholders - replace with actual logos -->
+            <div class="client-logo" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px; transition: all 0.3s; border-radius: 10px;">
+                <img src="client-logo-1.png" alt="Client Logo" style="max-width: 100%; height: auto; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s;">
+            </div>
+            <div class="client-logo" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px; transition: all 0.3s; border-radius: 10px;">
+                <img src="client-logo-2.png" alt="Client Logo" style="max-width: 100%; height: auto; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s;">
+            </div>
+            <div class="client-logo" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px; transition: all 0.3s; border-radius: 10px;">
+                <img src="client-logo-3.png" alt="Client Logo" style="max-width: 100%; height: auto; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s;">
+            </div>
+            <div class="client-logo" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px; transition: all 0.3s; border-radius: 10px;">
+                <img src="client-logo-4.png" alt="Client Logo" style="max-width: 100%; height: auto; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s;">
+            </div>
+            <div class="client-logo" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px; transition: all 0.3s; border-radius: 10px;">
+                <img src="client-logo-5.png" alt="Client Logo" style="max-width: 100%; height: auto; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s;">
+            </div>
+            <div class="client-logo" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px; transition: all 0.3s; border-radius: 10px;">
+                <img src="client-logo-6.png" alt="Client Logo" style="max-width: 100%; height: auto; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s;">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .client-logo:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent) !important;
+        }
+        .client-logo:hover img {
+            opacity: 1 !important;
+            filter: grayscale(0%) !important;
+        }
+    </style>
+
     <section class="services" id="services">
         <div class="section-header">
             <h2>What We <span class="underline">Do</span></h2>
@@ -1054,20 +1095,22 @@
                 <h5>Company</h5>
                 <a href="#about">About</a>
                 <a href="#process">Our Process</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-section">
                 <h5>Contact</h5>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@bloomly.fit&su=Inquiry%20from%20Bloomly.fit&body=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services." target="_blank">hello@bloomly.fit</a>
-                <p style="margin-top: 1rem;">Cairo, Egypt</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@bloomly.fit&su=Inquiry%20from%20Bloomly.fit&body=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services." target="_blank"><span class="__cf_email__" data-cfemail="036b666f6f6c43616f6c6c6e6f7a2d656a77">[email&#160;protected]</span></a>
+                <p style="margin-top: 1rem;">Wyoming, USA</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Bloomly.fit. All rights reserved. | Established 2023 | Cairo, Egypt</p>
+            <p>&copy; 2025 Bloomly.fit. All rights reserved. | Established 2023 | Wyoming, USA</p>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1092,10 +1135,4 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe animated elements
-        document.querySelectorAll('.service-card, .why
+                    entr
